@@ -37,6 +37,9 @@ def query1(minFare, maxFare):
         }
     )
 
+    result = [doc for doc in docs]
+    return result
+
 
 def query2(textSearch, minReviews):
     """ Finds airbnbs with that match textSearch and have number of reviews greater than or equal to minReviews.  
